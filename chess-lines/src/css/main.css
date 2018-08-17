@@ -1,0 +1,55 @@
+body {
+  background: #000;
+}
+
+#container {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#board {
+  margin-top: 20px;
+  width: 600px;
+  height: 600px;
+}
+
+.board-row {
+  background: white;
+  width: 100%;
+  height: 12.5%;
+  display: flex;
+}
+
+.square {
+  height: 100%;
+  width: 12.5%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-row-black .square:nth-of-type(even) {
+  background: rgb(136, 206, 136);
+}
+
+.board-row-white .square:nth-of-type(odd) {
+  background: rgb(136, 206, 136);
+}
+
+.board-number {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.white {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 0px;
+  }
+}
