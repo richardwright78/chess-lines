@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 import "./css/main.css";
 import board from "./utils/board";
 import Square from "./components/board-components/Square";
